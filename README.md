@@ -7,6 +7,28 @@
 ## 📌 Project Overview
 This project implements an **Aspect-Based Sentiment Analysis (ABSA)** system tailored for Vietnamese customer reviews in the fashion domain. The goal is to accurately classify customer attitudes (Negative, Neutral, Positive, or Not Mentioned) toward specific product attributes: **Material, Style, Size, Price, and Service**.
 
+## 💻 Installation & Setup
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/chauquocvinh2234/Aspect-Based_Sentiment_Analysis_for_Vietnamese_Fashion_Reviews.git
+   cd Aspect-Based_Sentiment_Analysis_for_Vietnamese_Fashion_Reviews
+   ```
+
+2. **Set up a virtual environment (Optional but recommended):**
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use: venv\Scripts\activate
+   ```
+
+3. **Install dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
 ## 📊 Dataset
 The training data consists of Vietnamese reviews collected from various e-commerce platforms. To optimize the repository size and ensure fast data loading, the dataset is hosted separately on Hugging Face.
 
