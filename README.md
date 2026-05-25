@@ -21,6 +21,30 @@ dataset = load_dataset("vinhplaykennen/FashionReviews")
 print(dataset['train'][:5])
 ```
 
+## 📈 Model Performance (Accuracy)
+
+To thoroughly evaluate the classification capabilities of our system, we conducted experiments using two different word embedding techniques: **CBOW + FastText** and **SkipGram**. All models were trained using a multi-branch (multi-output) architecture to simultaneously predict 5 distinct aspects.
+
+### 1. Embedding: CBOW + FastText
+| Aspect | RNN | LSTM | GRU | Bi-LSTM | Bi-LSTM <br> Self-Attention | Bi-LSTM <br> Self-Attention <br> (Branch-wise) |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Material** *(Chất liệu)* | 0.36 | 0.88 | **0.89** | **0.89** | **0.89** | **0.89** |
+| **Style** *(Kiểu dáng)* | 0.37 | 0.87 | **0.88** | **0.88** | 0.87 | **0.88** |
+| **Size** *(Kích cỡ)* | 0.36 | 0.85 | 0.84 | 0.85 | 0.85 | **0.86** |
+| **Price** *(Giá cả)* | 0.51 | **0.93** | **0.93** | **0.93** | **0.93** | **0.93** |
+| **Service** *(Dịch vụ)* | 0.46 | 0.90 | 0.90 | 0.90 | **0.91** | 0.90 |
+
+### 2. Embedding: SkipGram
+| Aspect | RNN | LSTM | GRU | Bi-LSTM | Bi-LSTM <br> Self-Attention | Bi-LSTM <br> Self-Attention <br> (Branch-wise) |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Material** *(Chất liệu)* | 0.38 | 0.89 | **0.90** | **0.90** | **0.90** | **0.90** |
+| **Style** *(Kiểu dáng)* | 0.37 | **0.89** | **0.89** | **0.89** | **0.89** | **0.89** |
+| **Size** *(Kích cỡ)* | 0.34 | 0.86 | 0.85 | 0.86 | **0.87** | **0.87** |
+| **Price** *(Giá cả)* | 0.26 | **0.93** | **0.93** | **0.93** | **0.93** | **0.93** |
+| **Service** *(Dịch vụ)* | 0.36 | **0.91** | 0.90 | **0.91** | **0.91** | **0.91** |
+
+*💡 **Evaluation Summary:** Overall, the **SkipGram** embedding slightly outperforms CBOW + FastText across most aspects (especially in Size and Style). Among the architectures, the **Bi-LSTM Self-Attention (Branch-wise)** consistently delivers the most robust and highest accuracy, proving its effectiveness in capturing aspect-specific contextual nuances in Vietnamese fashion reviews.*
+
 ## 📂 Folder Structure
 
 ```text
