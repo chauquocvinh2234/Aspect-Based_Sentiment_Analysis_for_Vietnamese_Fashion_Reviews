@@ -1,0 +1,21 @@
+# Core dependencies
+pandas
+numpy
+openpyxl
+
+# Machine Learning & Deep Learning
+torch
+gensim
+scikit-learn
+matplotlib
+seaborn
+
+# Natural Language Processing & OCR
+underthesea
+google-genai
+python-dotenv
+langdetect
+Pillow
+pydantic
+tqdm
+python-dateutil
