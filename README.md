@@ -21,6 +21,23 @@ dataset = load_dataset("vinhplaykennen/FashionReviews")
 print(dataset['train'][:5])
 ```
 
+## 🧠 Model Architecture
+
+Among the 6 deep learning architectures tested, the **Multi-Branch Bi-LSTM with Self-Attention (Branch-wise)** architecture achieved the highest overall accuracy. This model successfully handles the multi-output task, effectively capturing the distinct contextual nuances of each aspect within Vietnamese fashion reviews.
+
+Below is the comprehensive visual diagram of our top-performing architecture:
+
+![Bi-LSTM Self-Attention Branch-wise Architecture](Images/BiLSTM_Self-attention_BranchWise_Architecture.jpg)
+
+### 🔬 Other Experimental Baselines
+To maintain a clean and concise documentation page, the visual diagrams for the other 5 experimental architectures are hosted within the repository and can be viewed directly via the links below:
+
+* [Vanilla RNN Architecture Diagram](Images/VanillaRNN_Architecture.jpg)
+* [Standard LSTM Architecture Diagram](Images/LSTM_Architecture.jpg)
+* [Standard GRU Architecture Diagram](Images/GRU_Architecture.jpg)
+* [Standard Bi-LSTM Architecture Diagram](Images/BiLSTM_Architecture.jpg)
+* [Bi-LSTM with Global Self-Attention Diagram](Images/BiLSTM_Self-attention_Architecture.jpg)
+
 ## 📈 Model Performance (Accuracy)
 
 To thoroughly evaluate the classification capabilities of our system, we conducted experiments using two different word embedding techniques: **CBOW + FastText** and **SkipGram**. All models were trained using a multi-branch (multi-output) architecture to simultaneously predict 5 distinct aspects.
