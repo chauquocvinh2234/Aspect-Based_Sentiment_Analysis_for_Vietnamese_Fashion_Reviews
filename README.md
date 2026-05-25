@@ -66,14 +66,14 @@ To thoroughly evaluate the classification capabilities of our system, we conduct
 
 ```text
 Aspect-Based_Sentiment_Analysis/
-├── Embedding_Model/          # Contains word embedding models used for text representation (e.g., FastText, CBOW).
+├── Embedding_Model/          # Contains notebooks for training word embedding models used for text representation (e.g., FastText, CBOW).
 │   └── Embedding_CBOW_...
 │
 ├── Preprocessing/            # Contains notebooks for raw data preprocessing, including text cleaning, OCR extraction, and LLM-assisted processing.
 │   ├── OCR_TienXuLyVoiLLM.ipynb
 │   └── TienXuLyTho.ipynb
 │
-├── TextClassification_Model/ # Contains various Deep Learning models for the sentiment classification task (e.g., RNN, LSTM, BiLSTM with Attention).
+├── TextClassification_Model/ # Contains notebooks for training various Deep Learning models for the sentiment classification task (e.g., RNN, LSTM, BiLSTM with Attention).
 │   ├── FastText_Adv-BiLSTM...
 │   ├── FastText_BiLSTM...
 │   └── ...
