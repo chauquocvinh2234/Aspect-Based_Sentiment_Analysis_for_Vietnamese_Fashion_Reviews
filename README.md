@@ -23,8 +23,8 @@ print(dataset['train'][:5])
 
 ## 🤝 Contributors
 - Châu Quốc Vinh
-  + [Github] (https://github.com/chauquocvinh2234)
-  + [Gmail] (vinhit220304@gmail.com)
+  + [Github](https://github.com/chauquocvinh2234)
+  + [Gmail](vinhit220304@gmail.com)
 - Vũ Trọng Nghĩa
-  + [Github] (https://github.com/TrongNghia041104)
-  + [Gmail] (nghia.hpotaku04@gmail.com)
+  + [Github](https://github.com/TrongNghia041104)
+  + [Gmail](nghia.hpotaku04@gmail.com)
